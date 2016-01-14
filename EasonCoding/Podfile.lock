@@ -1,0 +1,19 @@
+PODS:
+  - iCarousel (1.8.2)
+  - Masonry (0.6.3)
+  - ODRefreshControl (1.2)
+  - RDVTabBarController (1.1.9)
+
+DEPENDENCIES:
+  - iCarousel (~> 1.8.2)
+  - Masonry (~> 0.6.3)
+  - ODRefreshControl (~> 1.2)
+  - RDVTabBarController (~> 1.1.9)
+
+SPEC CHECKSUMS:
+  iCarousel: 67c8a43da5a46795b56aadfc96cd36a16f6149b2
+  Masonry: ff105a956abcd19a618b2028b121cb638d7a8e2f
+  ODRefreshControl: 907e6149d72dde488d5917ccfabee5bd8d711a20
+  RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
+
+COCOAPODS: 0.39.0

@@ -1,0 +1,17 @@
+//
+//  EasonCoding_Prefix.pch
+//  EasonCoding
+//
+//  Created by 何毅 on 16/1/14.
+//  Copyright © 2016年 eason_ho. All rights reserved.
+//
+
+#ifndef EasonCoding_Prefix_h
+#define EasonCoding_Prefix_h
+
+#endif /* EasonCoding_Prefix_h */
+
+
+//系统型号
+#define systemVersion [[UIDevice currentDevice] systemVersion]
+
