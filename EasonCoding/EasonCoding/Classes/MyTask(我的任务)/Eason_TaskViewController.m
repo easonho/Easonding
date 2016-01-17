@@ -7,6 +7,8 @@
 //
 
 #import "Eason_TaskViewController.h"
+#import "FRDLivelyButton.h"
+#import "EasonEditTaskController.h"
 
 @interface Eason_TaskViewController ()
 
@@ -18,21 +20,44 @@
     [super viewDidLoad];
     [self.view setBackgroundColor:[UIColor greenColor]];
     self.title = @"任务";
+    
+    
+    FRDLivelyButton *button = [[FRDLivelyButton alloc] initWithFrame:CGRectMake(0, 0, 18, 18)];
+    
+//    kFRDLivelyButtonStyleHamburger,
+//    kFRDLivelyButtonStyleClose,
+//    kFRDLivelyButtonStylePlus,
+//    kFRDLivelyButtonStyleCirclePlus,
+//    kFRDLivelyButtonStyleCircleClose,
+//    kFRDLivelyButtonStyleCaretUp,
+//    kFRDLivelyButtonStyleCaretDown,
+//    kFRDLivelyButtonStyleCaretLeft,
+//    kFRDLivelyButtonStyleCaretRight,
+//    kFRDLivelyButtonStyleArrowLeft,
+//    kFRDLivelyButtonStyleArrowRight
+    
+    [button setOptions:@{kFRDLivelyButtonHighlightScale : @(0.9f),kFRDLivelyButtonLineWidth:@(1.0)}];
+    [button setStyle:kFRDLivelyButtonStylePlus animated:YES];
+    UIBarButtonItem *rightBottonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+    [button addTarget:self action:@selector(addItemClicked:) forControlEvents:UIControlEventTouchUpInside];
+    
+    self.navigationItem.rightBarButtonItem = rightBottonItem;
+
 }
+
+-(void) addItemClicked:(UIBarButtonItem*)seader
+{
+    EasonEditTaskController * editTaskController = [[EasonEditTaskController alloc] init];
+    [self.navigationController pushViewController:editTaskController animated:NO];
+    self.tabBarController.tabBar.hidden = YES;
+}
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

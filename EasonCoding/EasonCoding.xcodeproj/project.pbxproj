@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B87BBFE1C4B3C50007B798D /* EasonEditTaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B87BBFD1C4B3C50007B798D /* EasonEditTaskController.m */; };
 		C9D149E3B2B13C527C3F9837 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FAC67E6E31C2B253B0D30A2 /* libPods.a */; };
 		E39AD49F1C4652ED007A0359 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E39AD49E1C4652ED007A0359 /* main.m */; };
 		E39AD4AA1C4652ED007A0359 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E39AD4A91C4652ED007A0359 /* Assets.xcassets */; };
@@ -439,6 +440,8 @@
 /* Begin PBXFileReference section */
 		14D55148FF33D4A0EAF0AB63 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		4FAC67E6E31C2B253B0D30A2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B87BBFC1C4B3C50007B798D /* EasonEditTaskController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasonEditTaskController.h; sourceTree = "<group>"; };
+		9B87BBFD1C4B3C50007B798D /* EasonEditTaskController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasonEditTaskController.m; sourceTree = "<group>"; };
 		DA9DEC36C2DB769EDB95CDC8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E39AD49A1C4652ED007A0359 /* EasonCoding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasonCoding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E39AD49E1C4652ED007A0359 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -854,8 +857,8 @@
 		E3EFD06E1C474780008C7DD5 /* EasonBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasonBaseNavigationController.m; sourceTree = "<group>"; };
 		E3EFD0701C4755DC008C7DD5 /* EasonBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasonBaseViewController.h; sourceTree = "<group>"; };
 		E3EFD0711C4755DC008C7DD5 /* EasonBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasonBaseViewController.m; sourceTree = "<group>"; };
-		E3EFD0761C47569E008C7DD5 /* Eason_TaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Eason_TaskViewController.h; sourceTree = "<group>"; };
-		E3EFD0771C47569E008C7DD5 /* Eason_TaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Eason_TaskViewController.m; sourceTree = "<group>"; };
+		E3EFD0761C47569E008C7DD5 /* Eason_TaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Eason_TaskViewController.h; path = ../Eason_TaskViewController.h; sourceTree = "<group>"; };
+		E3EFD0771C47569E008C7DD5 /* Eason_TaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Eason_TaskViewController.m; path = ../Eason_TaskViewController.m; sourceTree = "<group>"; };
 		E3EFD0791C4756D0008C7DD5 /* Eason_ProjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Eason_ProjectViewController.h; sourceTree = "<group>"; };
 		E3EFD07A1C4756D0008C7DD5 /* Eason_ProjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Eason_ProjectViewController.m; sourceTree = "<group>"; };
 		E3EFD07C1C47570D008C7DD5 /* Eason_TweetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Eason_TweetViewController.h; sourceTree = "<group>"; };
@@ -908,6 +911,31 @@
 				14D55148FF33D4A0EAF0AB63 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		9B87BBF91C4B3C1C007B798D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E3EFD0761C47569E008C7DD5 /* Eason_TaskViewController.h */,
+				E3EFD0771C47569E008C7DD5 /* Eason_TaskViewController.m */,
+				9B87BBFC1C4B3C50007B798D /* EasonEditTaskController.h */,
+				9B87BBFD1C4B3C50007B798D /* EasonEditTaskController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9B87BBFA1C4B3C1C007B798D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9B87BBFB1C4B3C1C007B798D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		E39AD4911C4652ED007A0359 = {
@@ -1017,8 +1045,9 @@
 		E39AD4D91C465B28007A0359 /* MyTask(我的任务) */ = {
 			isa = PBXGroup;
 			children = (
-				E3EFD0761C47569E008C7DD5 /* Eason_TaskViewController.h */,
-				E3EFD0771C47569E008C7DD5 /* Eason_TaskViewController.m */,
+				9B87BBF91C4B3C1C007B798D /* Controller */,
+				9B87BBFA1C4B3C1C007B798D /* Model */,
+				9B87BBFB1C4B3C1C007B798D /* View */,
 			);
 			path = "MyTask(我的任务)";
 			sourceTree = "<group>";
@@ -1754,7 +1783,6 @@
 				E39AD4961C4652ED007A0359 /* Sources */,
 				E39AD4971C4652ED007A0359 /* Frameworks */,
 				E39AD4981C4652ED007A0359 /* Resources */,
-				2DA259FA0D613A258384FC87 /* Embed Pods Frameworks */,
 				E14CA4F30C267BDC584371EA /* Copy Pods Resources */,
 			);
 			buildRules = (
@@ -2267,21 +2295,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2DA259FA0D613A258384FC87 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		6D5283A0A2189D5D97F897B9 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2320,6 +2333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3EFD0691C47418F008C7DD5 /* EasonRootTabBarController.m in Sources */,
+				9B87BBFE1C4B3C50007B798D /* EasonEditTaskController.m in Sources */,
 				E3EFD0811C475733008C7DD5 /* Eason_MessageViewController.m in Sources */,
 				E3EFD07E1C47570D008C7DD5 /* Eason_TweetViewController.m in Sources */,
 				E3EFD0721C4755DC008C7DD5 /* EasonBaseViewController.m in Sources */,
