@@ -15,3 +15,11 @@
 //系统型号
 #define systemVersion [[UIDevice currentDevice] systemVersion]
 
+#define SCREEN_BOUND   ([[UIScreen mainScreen] bounds])
+
+//屏幕的宽度
+#define SCREEN_WIDTH    ([[UIScreen mainScreen] bounds].size.width)
+//屏幕的高度
+#define SCREEN_HEIGHT   ([[UIScreen mainScreen] bounds].size.height)
+
+#define kKeyWindow [UIApplication sharedApplication].keyWindow

@@ -9,13 +9,20 @@
 #import "EasonRootTabBarController.h"
 #import "EasonBaseNavigationController.h"
 #import "RDVTabBarItem.h"
-#import "Eason_ProjectViewController.h"
 #import "Eason_TaskViewController.h"
 #import "Eason_TweetViewController.h"
 #import "Eason_MessageViewController.h"
 #import "Eason_MeViewController.h"
+#import "Eason_myProjectController.h"
+#import "Eason_ProjectTagViewController.h"
+
 
 @interface EasonRootTabBarController ()
+
+//我的任务模块
+@property(nonatomic,strong) Eason_myProjectController *myProjectController;
+//我任务摸
+@property (strong, nonatomic) NSArray *segmentItems;
 
 @end
 
@@ -24,20 +31,37 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self configSegmentItems];
     [self setUpChildViewController];
 
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
+
+- (void)configSegmentItems{
+    _segmentItems = @[@"全部项目", @"我参与的", @"我创建的"];
+}
+
+
 
 #pragma --mark 初始化子控制器
 -(void) setUpChildViewController{
 //   我的项目
-    Eason_ProjectViewController *project = [[Eason_ProjectViewController alloc] init];
-    UINavigationController *nav_project = [[EasonBaseNavigationController alloc] initWithRootViewController:project];
+    NSMutableArray *vcs = [NSMutableArray array];
+    for (int i = 0; i < _segmentItems.count; i++) {
+        Eason_ProjectTagViewController *vc = [[Eason_ProjectTagViewController alloc] init];
+        vc.projectType = i;
+        vc.title = _segmentItems[i];
+        vc.view.backgroundColor = [UIColor clearColor];
+        [vcs addObject:vc];
+    }
+    self.myProjectController = [[Eason_myProjectController alloc] initWithViewControllers:vcs];
+    self.myProjectController.indicatorInsets = UIEdgeInsetsMake(0, 24, 0, 24);
+    self.myProjectController.indicatorColor = [UIColor greenColor];
+    self.myProjectController.itemWidth = SCREEN_WIDTH/3;
+    UINavigationController *nav_project = [[EasonBaseNavigationController alloc] initWithRootViewController:self.myProjectController];
     
 //  我的任务
     Eason_TaskViewController *mytask = [[Eason_TaskViewController alloc] init];

@@ -1,22 +1,34 @@
 PODS:
-  - FRDLivelyButton (1.1.3)
   - iCarousel (1.8.2)
-  - Masonry (0.6.4)
+  - JYSlideSegmentController (1.2.5)
+  - Masonry (0.6.3)
   - ODRefreshControl (1.2)
+  - pop (1.0.8)
+  - PopMenu (2.4):
+    - pop
+    - XHRealTimeBlur
   - RDVTabBarController (1.1.9)
+  - SVPullToRefresh (0.4.1)
+  - XHRealTimeBlur (1.7)
 
 DEPENDENCIES:
-  - FRDLivelyButton (~> 1.1.3)
   - iCarousel (~> 1.8.2)
+  - JYSlideSegmentController (~> 1.2.5)
   - Masonry (~> 0.6.3)
   - ODRefreshControl (~> 1.2)
+  - PopMenu (~> 2.4)
   - RDVTabBarController (~> 1.1.9)
+  - SVPullToRefresh (~> 0.4.1)
 
 SPEC CHECKSUMS:
-  FRDLivelyButton: d67f7ecb801ac84427fca1ea832a63e972b72478
   iCarousel: 67c8a43da5a46795b56aadfc96cd36a16f6149b2
-  Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  JYSlideSegmentController: 10c66d6eecaa7364e7fe02b9d4aa57ee7b4c3317
+  Masonry: ff105a956abcd19a618b2028b121cb638d7a8e2f
   ODRefreshControl: 907e6149d72dde488d5917ccfabee5bd8d711a20
+  pop: bb773ae2c791ca2629de13b347e7a8b450fa6a57
+  PopMenu: 26b97baeaf250070f4f61b93727ca86d127d7bc5
   RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
+  SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
+  XHRealTimeBlur: 661fadd5691ba2d349758e8fd5fbdb499ac55f8c
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.39.0
